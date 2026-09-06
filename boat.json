@@ -5,43 +5,74 @@
  "tours": [
   "https://my.matterport.com/show/?m=786sAmrqzJN"
  ],
- "generated": "2026-09-06",
+ "generated": "2026-09-07",
  "rooms": [
   {
    "id": "saloon",
    "label": "Salon",
-   "version": "1788724604",
-   "source_photo": "photos/13.jpg",
-   "preview": "preview/saloon.jpg"
+   "version": "1788737645",
+   "source_photos": [
+    "photos/13.jpg",
+    "photos/28.jpg",
+    "photos/19.jpg"
+   ],
+   "preview": "preview/saloon.jpg",
+   "generator": "flashworld"
   },
   {
    "id": "helm",
    "label": "Steuerstand",
-   "version": "1788724609",
-   "source_photo": "photos/08.jpg",
-   "preview": "preview/helm.jpg"
+   "version": "1788737660",
+   "source_photos": [
+    "photos/08.jpg",
+    "photos/05.jpg",
+    "photos/07.jpg"
+   ],
+   "preview": "preview/helm.jpg",
+   "generator": "flashworld"
   },
   {
    "id": "galley",
    "label": "Pantry",
-   "version": "1788724614",
-   "source_photo": "photos/14.jpg",
-   "preview": "preview/galley.jpg"
+   "version": "1788737671",
+   "source_photos": [
+    "photos/14.jpg",
+    "photos/17.jpg",
+    "photos/18.jpg"
+   ],
+   "preview": "preview/galley.jpg",
+   "generator": "flashworld"
   },
   {
    "id": "master_cabin",
    "label": "Eignerkabine",
-   "version": "1788724618",
-   "source_photo": "photos/20.jpg",
+   "version": "1788737683",
+   "source_photos": [
+    "photos/20.jpg",
+    "photos/26.jpg",
+    "photos/24.jpg"
+   ],
+   "generator": "marble",
+   "frame": "marble_raw_opencv",
+   "world_url": "https://marble.worldlabs.ai/world/bfb9fd35-35e5-4167-a38e-49589f3fe206",
+   "scale": 0.61551666,
+   "ground": 1.417571,
    "preview": "preview/master_cabin.jpg"
   },
   {
    "id": "guest_cabin",
    "label": "Gästekabine",
-   "version": "1788724623",
-   "source_photo": "photos/31.jpg",
-   "preview": "preview/guest_cabin.jpg"
+   "version": "1788737684",
+   "source_photos": [
+    "photos/31.jpg",
+    "photos/21.jpg",
+    "photos/33.jpg"
+   ],
+   "preview": "preview/guest_cabin.jpg",
+   "generator": "flashworld"
   }
  ],
- "skipped": []
+ "skipped": [
+  "heads"
+ ]
 }

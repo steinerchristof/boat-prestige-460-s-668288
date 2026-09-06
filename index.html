@@ -76,9 +76,13 @@ renderer.setSize(innerWidth, innerHeight);
 document.body.appendChild(renderer.domElement);
 scene.add(new SparkRenderer({ renderer }));
 
-// First-person state. yaw/pitch in radians, position in world units (roughly metres after normalisation).
+// First-person state. yaw/pitch in radians, position in world units (metres for Marble rooms, roughly metres for FlashWorld).
 const state = { yaw: 0, pitch: 0, pos: new THREE.Vector3(0, 0, 0), keys: new Set() };
-function resetView() { state.yaw = 0; state.pitch = 0; state.pos.set(0, 0, 0); }
+let activeRoom = null;
+function resetView() {
+  const s = activeRoom?.start || [0, 0, 0];
+  state.yaw = THREE.MathUtils.degToRad(activeRoom?.yaw || 0); state.pitch = 0; state.pos.set(s[0], s[1], s[2]);
+}
 function applyCamera() {
   camera.position.copy(state.pos);
   camera.quaternion.setFromEuler(new THREE.Euler(state.pitch, state.yaw, 0, "YXZ"));
@@ -146,9 +150,14 @@ async function loadRoom(room) {
   status.style.display = "block";
   if (current) { scene.remove(current); current.dispose?.(); current = null; }
   const mesh = new SplatMesh({ url: ROOM_DIR + room.id + EXT + (room.version ? "?v=" + room.version : "") });
-  // FlashWorld exports OpenGL world coordinates, matching Three.js; no extra rotation.
+  // FlashWorld exports OpenGL world coordinates, matching Three.js: no extra rotation.
+  // Marble exports in its raw OpenCV frame (Y down, Z forward): half turn about X, then metric scale.
+  if (room.frame === "marble_raw_opencv") mesh.rotation.x = Math.PI;
+  if (room.scale) mesh.scale.setScalar(room.scale);
+  if (room.offset) mesh.position.set(room.offset[0], room.offset[1], room.offset[2]);
   scene.add(mesh);
   current = mesh;
+  activeRoom = room;
   resetView();
   try { await mesh.initialized; } catch (err) { status.textContent = `Fehler beim Laden: ${err}`; return; }
   status.style.display = "none";
