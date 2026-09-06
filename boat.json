@@ -1,0 +1,47 @@
+{
+ "title": "2025 Prestige 460 S",
+ "subtitle": "EUR 749'000",
+ "source": "https://www.boot24.ch/chde/motorboote/prestige/prestige-460-s/detail/668288/",
+ "tours": [
+  "https://my.matterport.com/show/?m=786sAmrqzJN"
+ ],
+ "generated": "2026-09-06",
+ "rooms": [
+  {
+   "id": "saloon",
+   "label": "Salon",
+   "version": "1788724604",
+   "source_photo": "photos/13.jpg",
+   "preview": "preview/saloon.jpg"
+  },
+  {
+   "id": "helm",
+   "label": "Steuerstand",
+   "version": "1788724609",
+   "source_photo": "photos/08.jpg",
+   "preview": "preview/helm.jpg"
+  },
+  {
+   "id": "galley",
+   "label": "Pantry",
+   "version": "1788724614",
+   "source_photo": "photos/14.jpg",
+   "preview": "preview/galley.jpg"
+  },
+  {
+   "id": "master_cabin",
+   "label": "Eignerkabine",
+   "version": "1788724618",
+   "source_photo": "photos/20.jpg",
+   "preview": "preview/master_cabin.jpg"
+  },
+  {
+   "id": "guest_cabin",
+   "label": "Gästekabine",
+   "version": "1788724623",
+   "source_photo": "photos/31.jpg",
+   "preview": "preview/guest_cabin.jpg"
+  }
+ ],
+ "skipped": []
+}
