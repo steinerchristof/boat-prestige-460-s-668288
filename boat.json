@@ -10,43 +10,55 @@
   {
    "id": "saloon",
    "label": "Salon",
-   "version": "1788737645",
+   "version": "1788738165",
    "source_photos": [
     "photos/13.jpg",
     "photos/28.jpg",
     "photos/19.jpg"
    ],
-   "preview": "preview/saloon.jpg",
-   "generator": "flashworld"
+   "generator": "marble",
+   "frame": "marble_raw_opencv",
+   "world_url": "https://marble.worldlabs.ai/world/a100d45b-3a49-4bd5-beb5-98080b7ce89d",
+   "scale": 0.64551306,
+   "ground": 1.80126,
+   "preview": "preview/saloon.jpg"
   },
   {
    "id": "helm",
    "label": "Steuerstand",
-   "version": "1788737660",
+   "version": "1788738165",
    "source_photos": [
     "photos/08.jpg",
     "photos/05.jpg",
     "photos/07.jpg"
    ],
-   "preview": "preview/helm.jpg",
-   "generator": "flashworld"
+   "generator": "marble",
+   "frame": "marble_raw_opencv",
+   "world_url": "https://marble.worldlabs.ai/world/a6773578-0b2e-4c58-aabe-8a6fbfb5a59c",
+   "scale": 0.9900756,
+   "ground": 1.1712952,
+   "preview": "preview/helm.jpg"
   },
   {
    "id": "galley",
    "label": "Pantry",
-   "version": "1788737671",
+   "version": "1788738165",
    "source_photos": [
     "photos/14.jpg",
     "photos/17.jpg",
     "photos/18.jpg"
    ],
-   "preview": "preview/galley.jpg",
-   "generator": "flashworld"
+   "generator": "marble",
+   "frame": "marble_raw_opencv",
+   "world_url": "https://marble.worldlabs.ai/world/67cdf906-9401-49f2-ba86-4d07e2dc8ebb",
+   "scale": 1.0742302,
+   "ground": 1.4047997,
+   "preview": "preview/galley.jpg"
   },
   {
    "id": "master_cabin",
    "label": "Eignerkabine",
-   "version": "1788737683",
+   "version": "1788738165",
    "source_photos": [
     "photos/20.jpg",
     "photos/26.jpg",
@@ -62,17 +74,36 @@
   {
    "id": "guest_cabin",
    "label": "Gästekabine",
-   "version": "1788737684",
+   "version": "1788738166",
    "source_photos": [
     "photos/31.jpg",
     "photos/21.jpg",
     "photos/33.jpg"
    ],
-   "preview": "preview/guest_cabin.jpg",
-   "generator": "flashworld"
+   "generator": "marble",
+   "frame": "marble_raw_opencv",
+   "world_url": "https://marble.worldlabs.ai/world/3a747ebd-a36c-4cac-9730-619071818e0d",
+   "scale": 1.089993,
+   "ground": 1.5044446,
+   "preview": "preview/guest_cabin.jpg"
+  },
+  {
+   "id": "heads",
+   "label": "Nasszelle",
+   "version": "1788738166",
+   "source_photos": [
+    "photos/25.jpg",
+    "photos/23.jpg",
+    "photos/27.jpg",
+    "photos/32.jpg"
+   ],
+   "generator": "marble",
+   "frame": "marble_raw_opencv",
+   "world_url": "https://marble.worldlabs.ai/world/acef5aa6-9b69-4058-bf73-4288d88c8d15",
+   "scale": 0.49065253,
+   "ground": 1.2043731,
+   "preview": "preview/heads.jpg"
   }
  ],
- "skipped": [
-  "heads"
- ]
+ "skipped": []
 }
